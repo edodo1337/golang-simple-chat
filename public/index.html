@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lets chat!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head-title">
+            <h1>Chat</h1>
+        </div>
+        <div id="error-place" class="alert">Error</div>
+        <div id="info-place" class="info">Info</div>
+
+        <div class="inbox-chat" id="chat-list">
+        </div>
+        <form id="chat-form">
+            <div>
+                <input class="input-username" id="chat-input-username" type="text" placeholder="Username" />
+            </div>
+            <div>
+                <input class="input-text" id="chat-input-message" type="text" placeholder="Message" />
+            </div>
+            <input id="chat-button-submit" type="submit" value="Send">
+        </form>
+    </div>
+</body>
+
+</html>
