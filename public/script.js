@@ -12,7 +12,8 @@ String.prototype.hashCode = function() {
 
 document.addEventListener('DOMContentLoaded', function () {
     if ('WebSocket' in window) {
-        var ws = new WebSocket("ws://localhost:8080/ws");
+        var host = window.location.host;
+        var ws = new WebSocket("ws://" + host + "/ws");
 
         var
             chatInput = document.getElementById("chat-input-message");
